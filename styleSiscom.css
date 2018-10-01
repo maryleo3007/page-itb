@@ -1,0 +1,82 @@
+ /******************navbar style*************************/
+ .navbar{
+    border: none;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff !important;
+    margin-top: 10px;
+    /* height: 74px;
+    line-height: 74px; */
+    z-index: 9999;
+  }
+  .nabvar-container ul a{
+    color: rgba(0, 0, 0, 0.9);
+  }
+ 
+  .logo-itb{
+    height: 60px;
+  }
+  #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover, #mainNav .navbar-nav>li.nav-item>a.nav-link {
+    font-size: .9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover, #mainNav .navbar-nav>li.nav-item>a.nav-link:hover {
+    color: #f05f40;
+  }
+  .home-cls.active,.service-cls.active, .nosotros-cls.active, .contact-cls.active {
+    color: #f05f40 !important;
+  }
+
+
+  @media (min-width: 992px){
+    #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus:hover, #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:hover {
+      color: #f05f40;
+    }
+    #mainNav .navbar-nav>li.nav-item>a.nav-link, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
+      color: rgba(255,255,255,.7);
+    }
+ 
+    #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link, #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus {
+      color: #212529;
+    }
+    .navbar.active{
+      position: fixed;
+      margin-top: -701px;
+      width: 100%;
+      background: #ffffff !important;
+    }
+    .service-cls.active, .nosotros-cls.active, .contact-cls.active {
+      color: #f05f40;
+    }
+  }
+ 
+  /************************************************************/
+  /**********************itbsiscom*****************************/
+  /************************************************************/
+
+  .content-siscom img{
+    height: 270px;
+  }
+  .title-factElec{
+    border-left: 5px solid #1a2b63;
+    padding-left: 10px;
+    margin-bottom: -5px;
+  }
+  .title-multiempresa{
+    border-left: 5px solid #82e1e1;
+    padding-left: 10px;
+    margin-bottom: -5px;
+  }
+  .title-easyIntuitiv{
+    border-left: 5px solid #FF9C69;
+    padding-left: 10px;
+    margin-bottom: -5px;
+  }
+  .title-cumNorm{
+    border-left: 5px solid #69CEFF;
+    padding-left: 10px;
+    margin-bottom: -5px;
+  }
+

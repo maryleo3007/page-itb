@@ -959,7 +959,7 @@
     background-color: #f5f6f7;
   }
   .img-about{
-    height: 350px;;
+    height: 350px;
   }
   .description-itb{
     font-size: 22px;
@@ -984,4 +984,6 @@
     webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
   }
-  
+
+
+
