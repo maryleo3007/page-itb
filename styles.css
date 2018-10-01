@@ -117,7 +117,7 @@
     transition: transform 1200ms 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 300ms 1300ms linear, -webkit-transform 1200ms 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
   }
   
-  .card {
+  .card-home {
     background: rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 50%;
@@ -760,7 +760,7 @@
     cursor: pointer;
     position: relative;
     z-index: 2;
-    color: #ffffff;
+    color: #ffffff !important;
     border: 2px solid #000000;
     /* box-shadow: 0 1rem 2rem rgba(2, 182, 244, 0.2); */
     transition: -webkit-transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -887,27 +887,101 @@
     transition: transform 800ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 300ms linear, -webkit-transform 800ms cubic-bezier(0.165, 0.84, 0.44, 1);
   }
   /******************navbar style*************************/
-  .nabvar-container{
+  .navbar{
     border: none;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-    background-color: #fff !important;
+    background-color: #ffffff !important;
     margin-top: 10px;
     /* height: 74px;
     line-height: 74px; */
+    z-index: 9999;
   }
   .nabvar-container ul a{
     color: rgba(0, 0, 0, 0.9);
   }
+ 
   .logo-itb{
     height: 60px;
   }
-  .section-services{
-    padding: 70px 0;
+  #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover, #mainNav .navbar-nav>li.nav-item>a.nav-link {
+    font-size: .9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover, #mainNav .navbar-nav>li.nav-item>a.nav-link:hover {
+    color: #f05f40;
+  }
+  .home-cls.active,.service-cls.active, .nosotros-cls.active, .contact-cls.active {
+    color: #f05f40 !important;
   }
 
+
+  @media (min-width: 992px){
+    #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus:hover, #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:hover {
+      color: #f05f40;
+    }
+    #mainNav .navbar-nav>li.nav-item>a.nav-link, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
+      color: rgba(255,255,255,.7);
+    }
+ 
+    #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link, #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus {
+      color: #212529;
+    }
+    .navbar.active{
+      position: fixed;
+      margin-top: -701px;
+      width: 100%;
+      background: #ffffff !important;
+    }
+    .service-cls.active, .nosotros-cls.active, .contact-cls.active {
+      color: #f05f40;
+    }
+  }
+ 
   /***************** productos y servicios section********************/
   
   .img-title-accom{
     height: 12px;
   }
+  .section-services{
+    padding: 70px 0;
+  }
+  .img-service{
+    height: 128px;
+  }
+
+  /******************** about us section*****************************/
+
+  .section-about{
+    padding: 70px 0;
+    background-color: #f5f6f7;
+  }
+  .img-about{
+    height: 350px;;
+  }
+  .description-itb{
+    font-size: 22px;
+  }
+
+  /*******section clients********/
+  .section-clients{
+    padding: 70px 0;
+    background-color: #ffffff;
+  }
+  .section-clients .banners li{
+    display: inline-block;
+    
+  }
+  .banners li img{
+    height: 120px;
+  }
+
+
+  /********section contact*********/
+  .content-contact{
+    webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
+  }
+  

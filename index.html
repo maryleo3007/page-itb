@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link type="text/css" rel="stylesheet" href="assets/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="assets/bootstrap.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="assets/aos.min.css">
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <div class="wrap-content">
-        <div class="wrap">
+        <div id="home" class="wrap">
             <div class="back">
                 <div class="back__slide active">
                 <div class="progress"></div>
@@ -20,7 +22,7 @@
                 <div class="back-front-image"></div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card-home">
                 <div class="card__slide active">
                 <div class="image"></div><span class="number"></span><span class="date">ITB SOLUTION<span class="date__time"> SAC</span></span>
                 </div>
@@ -46,66 +48,200 @@
             </div>
         </div>
         
-        <nav class="nabvar-container">
-            <div class="nav-wrapper">
-                <a href="#!" class="brand-logo"><img src="images/logo.png" class="logo-itb" alt="logo itb"></a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">Javascript</a></li>
-                <li><a href="mobile.html">Mobile</a></li>
+        <nav class="navbar navbar-expand-lg navbar-shrink" id="mainNav" style="background-color:white">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo-itb" alt=""></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger home-cls" href="#home">home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger service-cls" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger nosotros-cls" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger contact-cls" href="#contact">Contáctanos</a>
+                    </li>
                 </ul>
+                </div>
             </div>
         </nav>
-    
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
-        </ul>
-        <div class="section section-services">
+        <div id="servicios" class="section section-services">
             <div class="container">
                 <div class="row">
-                    <div class="col l12 s12 center-align">
-                        <img class="img-title-accom" src="images/title-acomplisment.svg" alt="title image">
-                    </div>
-                    <div class="col l12 s12 center-align">
+                    <div class="col-md-12 col-sm-12 text-center mb-4">
                         <p>Conoce lo que tenemos para ti</p>
                     </div>
-                    <div class="col l4 s12 center-align">
-                        <img src="images/web-design.png" alt="Desarrollo">
+                    <div class="col-md-4 col-sm-12 text-center">
+                        <img class="mb-4 img-service" src="images/web-design.png" alt="Desarrollo">
                         <h5>Desarrollo</h5>
-                        <p class="grey-text text-darken-2">We hope you have enjoyed using Materialize and if you feel like it has helped you out and want to support the team you can help us by donating or backing us on Patreon. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-                        <a class="btn waves-effect waves-light red lighten-2" href="/support-us.html">Support Us</a>
+                        <p class="grey-text text-darken-2">
+                            ITB Solution concentra sus esfuerzos 
+                            en entregar mucho más de los esperado y aplica metodologías de gobierno 
+                            y mejora continua
+
+                        </p>
+                        <a class="btn waves-effect waves-light red lighten-2" href="">Ver más</a>
     
                     </div>
-                    <div class="col l4 s12 center-align">
-                        <img src="images/seo.png" alt="Experiencia de usuario">
+                    <div class="col-md-4 col-sm-12 text-center">
+                        <img class="img-service mb-4" src="images/sharing.png" alt="Experiencia de usuario">
                         <h5>Experiencia de usuario</h5>
-                        <p class="grey-text text-darken-2">We have a Gitter chat room set up where you can talk directly with us. Come in and discuss new features, future goals, general problems or questions, or anything else you can think of.</p>
-                        <a class="btn waves-effect waves-light red lighten-2" target="_blank" href="https://gitter.im/Dogfalo/materialize">Chat</a>
+                        <p class="grey-text text-darken-2">
+                           Entendemos las necesidades de nuestros clientes, 
+                           creamos juntos y diseñamos productos que satisfagan dichas necesidades
+                        </p>
+                        <a class="btn waves-effect waves-light red lighten-2" target="_blank" href="">Ver más</a>
                     </div>
-                        <div class="col l4 s12 center-align">
-                        <img src="images/sharing.png" alt="Consultoria">
-                        <h5>Consultoria</h5>
-                        <iframe src="https://ghbtns.com/github-btn.html?user=dogfalo&amp;repo=materialize&amp;type=watch&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
-                        <br>
-                        <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 283px; height: 28px;" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.f6c7d667d236c62537eeaba62686136d.en.html#dnt=true&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=MaterializeCSS&amp;show_count=true&amp;show_screen_name=true&amp;size=l&amp;time=1537933568586" data-screen-name="MaterializeCSS"></iframe>
-                        <br>
-                        <div id="___follow_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 148px; height: 24px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 148px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1537933567776" name="I0_1537933567776" src="https://apis.google.com/u/0/_/widget/render/follow?usegapi=1&amp;annotation=bubble&amp;height=24&amp;rel=publisher&amp;origin=https%3A%2F%2Fmaterializecss.com&amp;url=https%3A%2F%2Fplus.google.com%2F108619793845925798422&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.es_419.37AmlsEDwoo.O%2Fam%3DwQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCNwn7Y3EYxmfPhbSWU5YgLsAx2exQ%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1537933567776&amp;_gfid=I0_1537933567776&amp;parent=https%3A%2F%2Fmaterializecss.com&amp;pfname=&amp;rpctoken=27577688" data-gapiattached="true"></iframe></div>
+                    <div  class="col-md-4 col-sm-12 text-center">
+                        
+                        <img class="mb-4 img-service" src="images/seo.png" alt="Consultoria">
+                        <h5>Consultoría</h5>
+                        <p class="grey-text text-darken-2">
+                            Asesoramos a nuestros clientes en ... para que logre ventaja competitiva
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="nosotros" class="section-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <img class="img-title-accom" src="images/title-acomplisment.svg" alt="title image">
+                    </div>
+                    <div class="col-md-12 col-sm-12 text-center mb-4">
+                        <p class="mt-3">Conócenos</p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 center-left align-middle description-itb mt-4">
+                        <p class="mt-4">
+                            Somos una empresa especializada en servicios Outsourcing, Software Quality Assurance, 
+                            Software Factory y en integración de Tecnologías de Información, 
+                            estamos enfocados en generar valor en los procesos evolutivos de nuestros clientes.
+    
+                            Tenemos un sólido compromiso con nuestros clientes, con altos estándares de calidad y profesionalismo.
+                        </p>
+                        
+                    </div>
+                    <div class="col-md-6 col-sm-12 center-left align-middle">
+                        <img class="img-about" src="images/about-itb.png" alt="about itb"  data-aos="fade-left"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="clients" class="section-clients">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <img class="img-title-accom" src="images/title-acomplisment.svg" alt="title image">
+                    </div>
+                    <div class="col-md-12 col-sm-12 text-center mb-4">
+                        <p class="mt-3"> Nuestros clientes</p>
+                    </div>
+                    <div class="col-md-12 col-sm-12center-left align-middle"> 
+                        <ul class="banners">
+                            <li data-aos="zoom-in"><img src="images/claro-i.png" alt=""></li>
+                            <li data-aos="zoom-in"><img src="images/tgestiona-i.png" alt=""></li>
+                            <li data-aos="zoom-in"><img src="images/poderjudicial-i.png" alt=""></li>
+                            <li data-aos="zoom-in"><img src="images/banbif-i.png" alt=""></li>
+                            <li data-aos="zoom-in"><img src="images/contraloria-i.png" alt=""></li>
+                            <li data-aos="zoom-in"><img src="images/realplaza-i.png" alt=""></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-       
+        <div id="contact" class="section-contact">
+                <div class="grey lighten-4 py-5 bg-light">
+                    <div class="container">
+                       
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 text-center">
+                            <img class="img-title-accom" src="images/title-acomplisment.svg" alt="title image">
+                        </div>
+                        <div class="col-md-12 col-sm-12 text-center mb-4">
+                            <p class="mt-3">Contáctanos</p>
+                        </div>
+                        <div class="col-md-5 p-5">
+                            <ul class="list-unstyled text-center">
+                                <li class="mt-4"><i class="fa fa-map-marker text-default fa-2x"></i>
+                                    <p class="mt-2"> <strong>Calle Los Mirtos 302 - Lince</strong></p>
+                                </li>
+                                <li class="mt-4"><i class="fa fa-phone text-default fa-2x"></i><p class="mt-2"> 
+                                    <strong>997562925 |</strong> <strong>+51 1 2397385</strong></p></li>
+                                <li class="mt-4"><i class="fa fa-envelope text-default fa-2x"></i><p class="mt-2"> 
+                                    <strong>informes@itbsolution.com.pe</strong></p></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-7">     
+                            <div class="card mb-5 content-contact" data-aos="fade-left" >
+                                <div class="card-body px-5">
+                                    <form action="https://formspree.io/youremail@example.com" method="POST">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="md-form">
+                                                    <input class="form-control" id="name" type="text" name="name" required="required">
+                                                    <label for="name">Nombre</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="md-form">
+                                                    <input class="form-control" id="email" type="text" name="_replyto" required="required">
+                                                    <label for="email">Correo</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="md-form">
+                                                    <input class="form-control" id="subject" type="text" name="subject" required="required">
+                                                    <label for="subject">Asunto</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="md-form">
+                                                    <textarea class="md-textarea form-control" id="message" name="message" required="required"></textarea>
+                                                    <label for="message">Mensaje</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="center-on-small-only mb-4">
+                                            <button class="btn btn-primary ml-0 " type="submit">
+                                                <i class="fa fa-paper-plane-o mr-2"></i> Enviar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright © Itbsolution SAC 2018</p>
+            </div>
+            <!-- /.container -->
+        </footer>
+        
     </div>
 
 
 
     <script src="jquery3.3.1.js"></script>
-    <script type="text/javascript" src="assets/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/bootstrap.min.js"></script>
+    <script src="assets/aos.min.js"></script>
     <script src="sb-admin.js"></script>
+
 </body>
 </html>
