@@ -8,6 +8,7 @@
     /* height: 74px;
     line-height: 74px; */
     z-index: 9999;
+    position: fixed;
   }
   .nabvar-container ul a{
     color: rgba(0, 0, 0, 0.9);
