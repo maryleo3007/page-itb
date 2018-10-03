@@ -51,37 +51,13 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });
 
-$(window).scroll(function() {
-	var $height = $(window).scrollTop();
-  if($height > 709) {
-    $('#mainNav').addClass('active');
-    
-	} else {
-    $('#mainNav').removeClass('active');
-  }
-  if($height < 500) {
-    $('.home-cls').addClass('active');
-    
-	} else {
-    $('.home-cls').removeClass('active');
-  }
-  if($height > 500 && $height < 1116) {
-    $('.service-cls').addClass('active');
-    
-	} else {
-    $('.service-cls').removeClass('active');
-  }
-  if($height > 1116 &&  $height < 2176) {
-    $('.nosotros-cls').addClass('active');
-    
-	} else {
-    $('.nosotros-cls').removeClass('active');
-  }
-  if($height > 2176) {
-    $('.contact-cls').addClass('active');
-    
-	} else {
-    $('.contact-cls').removeClass('active');
-  }
-  
+
+var prev = 0;
+var $window = $(window);
+var nav = $('.siscomNav');
+
+$window.on('scroll', function(){
+  var scrollTop = $window.scrollTop();
+  nav.toggleClass('none', scrollTop > prev);
+  prev = scrollTop;
 });
