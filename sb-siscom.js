@@ -51,13 +51,39 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });
 
-
-var prev = 0;
-var $window = $(window);
-var nav = $('.siscomNav');
-
-$window.on('scroll', function(){
-  var scrollTop = $window.scrollTop();
-  nav.toggleClass('none', scrollTop > prev);
-  prev = scrollTop;
+$(window).scroll(function() {
+    var $height = $(window).scrollTop();
+    
+    if($height > 100) {
+        $('#siscomNav').addClass('none');
+        
+    } else {
+        $('#siscomNav').removeClass('none');
+        $('.service-cls').addClass('active');
+    }
 });
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    // margin:10,
+    responsiveClass:true,
+    autoplay: true,
+    dots: false,
+    nav:false,
+    animateIn: true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:2,
+            nav:false
+        },
+        1000:{
+            items:1,
+            nav:false,
+            loop:true
+        }
+    }
+})
