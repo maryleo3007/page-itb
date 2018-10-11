@@ -15,9 +15,33 @@
     color: rgba(0, 0, 0, 0.9);
   }
 
-  .owl-item{
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  .item{
+    color: #ffffff;
+    margin-right: 10px;
+    margin-left: 10px;
+    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); */
     height: 200px;
+    /* background: rgba(179,220,237,1); */
+    border-radius: 5px;
+    /* background: -moz-linear-gradient(-45deg, rgba(179,220,237,1) 0%, rgba(118,202,232,1) 19%, rgba(188,224,238,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(179,220,237,1)), color-stop(19%, rgba(118,202,232,1)), color-stop(100%, rgba(188,224,238,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(179,220,237,1) 0%, rgba(118,202,232,1) 19%, rgba(188,224,238,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(179,220,237,1) 0%, rgba(118,202,232,1) 19%, rgba(188,224,238,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(179,220,237,1) 0%, rgba(118,202,232,1) 19%, rgba(188,224,238,1) 100%);
+    background: linear-gradient(135deg, rgba(179,220,237,1) 0%, rgba(118,202,232,1) 19%, rgba(188,224,238,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1 ); */
+  }
+  .item h4{
+    background: #02abd0;
+    color: #ffffff;
+    /* margin-right: 15%;
+    margin-left: 15%; */
+  }
+  .item ul li{
+    list-style: none;
+    color: #02abd0;
+    text-align: left;
+    margin-left: 10%;
   }
  
   .logo-itb{
@@ -57,7 +81,7 @@
   /**********************itbsiscom*****************************/
   /************************************************************/
   .content-siscom {
-    padding-top: 150px;
+    padding-top: 70px;
   }
   .content-siscom img{
     height: 270px;
@@ -84,6 +108,131 @@
   }
 
   .none{
-    display: none;
+    display: none !important;
+  }
+  .btn-fact-el{
+    background: transparent;
+    border: none;
+    letter-spacing: .01785714em;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #5f6368;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 6px 18px;
+    outline: none;
   }
 
+  .btn-fact-el:hover, .btn-fact-el:focus, .btn-fact-el.activo{
+    -webkit-box-shadow: 0 1px 3px 1px rgba(60,64,67,0.15), 0 1px 2px 0 rgba(60,64,67,0.3);
+    box-shadow: 0 1px 3px 1px rgba(60,64,67,0.15), 0 1px 2px 0 rgba(60,64,67,0.3);
+    border-bottom: 0;
+    background: #f1f1f1;
+    margin: 0 10px;
+    padding: 6px 18px;
+    width: auto;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    color: #1a73e8;
+    outline: none;
+  }
+
+.siscom-lap{
+  height: 500px !important;
+  width: 100%;
+}
+.content-fact-detail .row .col-12:nth-child(1),
+.content-fact-detail .row .col-12:nth-child(2),
+.content-fact-detail .row .col-12:nth-child(3){
+    border-right: none;
+}
+
+.row.bg-light, .row.bg-white {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#content-funcionalidades img{
+  height: 42px;
+}
+.content-fact-detail ul li{
+  list-style-type: none;
+  text-align: left;
+}
+.content-contact{
+  webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
+}
+.section-contactanos{
+  padding: 70px 0;
+}
+.section-contactanos form{
+  box-shadow: 0px 1px 10px #bfbfbf;
+}
+.custom-file-control, .form-control, .is-focused .custom-file-control, .is-focused .form-control {
+  background-image: linear-gradient(0deg,#02B9F2 2px,rgba(0, 111, 150, 0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 1px,transparent 0);
+}
+.btn-primary {
+  color: #fff;
+  background-color: #03a9f4;
+  border-color: #03a9f4;
+  box-shadow: none;
+}
+.btn, .custom-file-control:before {
+  position: relative;
+  margin-bottom: .3125rem;
+  font-size: .875rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+  will-change: box-shadow,transform;
+  color: rgba(0,0,0,.87);
+  background-color: transparent;
+  border-color: #ccc;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #03a9f4;
+  border-color: #03a9f4;
+}
+.active.custom-file-control:before, .btn.active, .btn.focus, .btn:active, .btn:focus, .btn:hover, .custom-file-control:active:before, .custom-file-control:focus:before, .custom-file-control:hover:before, .focus.custom-file-control:before, .open>.btn.dropdown-toggle, .open>.dropdown-toggle.custom-file-control:before {
+  color: rgba(0,0,0,.87);
+  background-color: hsla(0,0%,60%,.2);
+  border-color: hsla(0,0%,60%,.2);
+}
+.btn-primary.custom-file-control:before, .btn.btn-primary {
+  color: #03a9f4;
+  background-color: transparent;
+  border-color: #ccc;
+}
+.btn-primary.active.custom-file-control:before, .btn-primary.custom-file-control:active:before, .btn-primary.custom-file-control:focus:before, .btn-primary.custom-file-control:hover:before, .btn-primary.focus.custom-file-control:before, .btn.btn-primary.active, .btn.btn-primary.focus, .btn.btn-primary:active, .btn.btn-primary:focus, .btn.btn-primary:hover, .open>.btn-primary.dropdown-toggle.custom-file-control:before, .open>.btn.btn-primary.dropdown-toggle {
+  color: #03a9f4;
+  background-color: hsla(0,0%,60%,.2);
+  border-color: hsla(0,0%,60%,.2);
+}
+.bmd-btn-fab.btn-primary.custom-file-control:before, .btn-group-raised .btn-primary.custom-file-control:before, .btn-group-raised .btn.btn-primary, .btn-raised.btn-primary.custom-file-control:before, .btn.bmd-btn-fab.btn-primary, .btn.btn-raised.btn-primary {
+  color: #fff;
+  background-color: #03a9f4;
+  border-color: #03a9f4;
+}
+.bmd-btn-fab.btn-primary.active.custom-file-control:before, .bmd-btn-fab.btn-primary.custom-file-control:active:before, .bmd-btn-fab.btn-primary.custom-file-control:focus:before, .bmd-btn-fab.btn-primary.custom-file-control:hover:before, .bmd-btn-fab.btn-primary.focus.custom-file-control:before, .btn-group-raised .btn-primary.active.custom-file-control:before, .btn-group-raised .btn-primary.custom-file-control:active:before, .btn-group-raised .btn-primary.custom-file-control:focus:before, .btn-group-raised .btn-primary.custom-file-control:hover:before, .btn-group-raised .btn-primary.focus.custom-file-control:before, .btn-group-raised .btn.btn-primary.active, .btn-group-raised .btn.btn-primary.focus, .btn-group-raised .btn.btn-primary:active, .btn-group-raised .btn.btn-primary:focus, .btn-group-raised .btn.btn-primary:hover, .btn-raised.btn-primary.active.custom-file-control:before, .btn-raised.btn-primary.custom-file-control:active:before, .btn-raised.btn-primary.custom-file-control:focus:before, .btn-raised.btn-primary.custom-file-control:hover:before, .btn-raised.btn-primary.focus.custom-file-control:before, .btn.bmd-btn-fab.btn-primary.active, .btn.bmd-btn-fab.btn-primary.focus, .btn.bmd-btn-fab.btn-primary:active, .btn.bmd-btn-fab.btn-primary:focus, .btn.bmd-btn-fab.btn-primary:hover, .btn.btn-raised.btn-primary.active, .btn.btn-raised.btn-primary.focus, .btn.btn-raised.btn-primary:active, .btn.btn-raised.btn-primary:focus, .btn.btn-raised.btn-primary:hover, .open>.bmd-btn-fab.btn-primary.dropdown-toggle.custom-file-control:before, .open>.btn-group-raised .btn-primary.dropdown-toggle.custom-file-control:before, .open>.btn-group-raised .btn.btn-primary.dropdown-toggle, .open>.btn-raised.btn-primary.dropdown-toggle.custom-file-control:before, .open>.btn.bmd-btn-fab.btn-primary.dropdown-toggle, .open>.btn.btn-raised.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #03a9f4;
+  border-color: #005951;
+}
+
+@media (min-width: 768px) {
+  .content-fact-detail .row .col-12:nth-child(1),
+  .content-fact-detail .row .col-12:nth-child(2),
+  .content-fact-detail .row .col-12:nth-child(3){
+    border-right: 1px solid #f05f40;
+  }
+
+}

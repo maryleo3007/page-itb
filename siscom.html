@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link type="text/css" rel="stylesheet" href="assets/bootstrap.min.css"  media="screen,projection"/>
+    <!-- <link type="text/css" rel="stylesheet" href="assets/bootstrap.min.css"  media="screen,projection"/> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/aos.min.css">
     <link rel="stylesheet" href="assets/owl.carousel.min.css">
     <link rel="stylesheet" href="styleSiscom.css">
@@ -38,69 +40,140 @@
             </div>
         </nav>
         <div class="content-siscom"> 
-            <div class="container">
-                <div class="row mb-4">
-                    <div class="col-md-6 col-sm-12 mb-4">
+            <div class="container-fluid">
+                <div class="row mb-4 pr-5 pl-5">
+                    <div class="col-12 col-lg-6">
+                        speech siscom
+                    </div>
+                    <div class="col-12 col-lg-6 d-none d-md-none d-lg-block">
+                        <img class="siscom-lap img-responsive" src="images/laptop.png" alt="Itbsolution">
+                    </div>
+                </div>
+                <div class="row mt-4 mb-4 pr-5 pl-5 bg-white">
+                    <div class="col-12 mb-4">
                         <h5 class="title-factElec">Facturación electrónica</h5>
                         <p class="align-middle mt-4">
                             El Sistema de Facturación Electrónica, es un software diseñado para gestionar
                             los comprobantes electrónicos, desde la generación de éstas, validación por la SUNAT
                             y notificación al cliente final.
                         </p>
+                        <p>Beneficios de la facturación electrónica</p>
+                        <hr>
                     </div>
-                    <div class="col-md-6 col-sm-12 text-center mt-4 mb-4">
+                    <div class="col-12 text-center ">
                         <!-- <img src="images/technical-support.png" alt="facturacion electronica"> -->
-                        <div class="owl-carousel owl-theme owl-loaded owl-drag">
-                            <div class="owl-stage-outer">
-                                <div class="owl-stage" style="transform: translate3d(-990px, 0px, 0px); transition: all 0s ease 0s; width: 2376px;">
-                                    <div class="owl-item" style="width: 178px; margin-right: 20px;">
-                                        <div class="item">
-                                            <h4>Productividad</h4>
-                                            <ul>
-                                                <li>Mejoras en procesos logísticos</li>
-                                                <li>Optimizar procesos de auditoría</li>
-                                                <li>Menor tiempo de distribución</li>
-                                                <li>Reducción en tiempo de cobranza</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 178px; margin-right: 20px;">
-                                        <div class="item">
-                                            <h4>Competitividad</h4>
-                                            <ul>
-                                                <li>Mejor servicio al cliente</li>
-                                                <li>Comprobantes según estándares de SUNAT</li>
-                                                <li>Seguridad en la protección de documentos</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 178px; margin-right: 20px;">
-                                        <div class="item">
-                                            <h4>Costos</h4>
-                                            <ul>
-                                                <li>Reducción uso de papel</li>
-                                                <li>Reduce gastos de impresión</li>
-                                                <li>Almacenamiento de documentos en servidores</li>
-                                                <li>Mensajería instantánea</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 178px; margin-right: 20px;">
-                                        <div class="item">
-                                            <h4>Medio Ambiente</h4>
-                                            <ul>
-                                                <li>Reducción de insumos para producir papel</li>
-                                                <li>Menor emisión de CO2</li>
-                                                <li>Reducción de residuos de impresión</li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                        <div class="text-center mb-4">
+                            <button id="btn-funcionalidades" class="btn-fact-el activo">Funcionalidades</button>
+                            <button id="btn-como-funciona" class="btn-fact-el">¿Cómo funciona?</button>
+                        </div>
+                        <div id="content-funcionalidades" class="content-fact-detail active mt-5">
+                            <div class="row">
+                                <div class="col-12 col-md-3">
+                                        <img src="images/corefe.png" alt="core fe" data-aos="zoom-in">
+                                        <h6 class="mt-3">Core Fe</h6>
+                                        <ul>
+                                            <li>Generación de comprobantes electrónicos (XML y PDF)</li>
+                                            <li>Validación de comprobantes generados</li>
+                                            <li>Envío de comprobantes a SUNAT</li>
+                                            <li>Recepción de respuesta a SUNAT (CDR) y los tickets de atención</li>
+                                            <li>Envío automatizado de comprobantes a los clientes (XML y PDF)</li>
+                                            <li>Almacenamiento de comprobantes</li>
+                                        </ul>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                        <img src="images/integrationerp.png" alt="integración erp" data-aos="zoom-in">
+                                        <h6 class="mt-3">Integración ERP</h6>
+                                        <ul>
+                                            <li>Multi-empresa</li>
+                                            <li>Portal de consulta de comprobantes emitidos</li>
+                                            <li>Trazabalidad de cada comprobante generado</li>
+                                            <li>Historial de acciones realizados sobre casa comprobante</li>
+                                            <li>Respaldo diario</li>
+                                            <li>Recepción de documentos (proveedores)</li>
+                                            <li>Portal de consulta libre</li>
+                                        </ul>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                        <img src="images/platform.png" alt="plataforma online" data-aos="zoom-in">
+                                        <h6 class="mt-3">Plataforma On-line</h6>
+                                        <ul>
+                                            <li>Módulo de clientes</li>
+                                            <li>Módulo de productos</li>
+                                            <li>Registro de comprobantes</li>
+                                            <li>Anulación de comprobantes</li>
+                                            <li>Impresión física de comprobantes</li>
+                                        </ul>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                        <img src="images/support.png" alt="soporte" data-aos="zoom-in">
+                                        <h6 class="mt-3">Soporte</h6>
+                                        <ul>
+                                            <li>Actualización del sistema</li>
+                                            <li>Soporte post-venta</li>
+                                            <li>Servicio de soporte técnico 12/6</li>
+                                            <li>Homologación con SUNAT</li>
+                                            <li>Servicios profesionales para la integración</li>
+                                            <li>Capacitación para el proceso de Homologación</li>
+                                            <li>Capacitación en el uso de software</li>
+                                            <li>Incluye certificado digital</li>
+                                            <li>Seguridad en la comunicación con SUNAT</li>
+                                        </ul>
                                 </div>
                             </div>
                         </div>
+                        <div id="content-como-funciona" class=" content-fact-detail none">
+                            <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                                    <div class="owl-stage-outer">
+                                        <div class="owl-stage" style="transform: translate3d(-990px, 0px, 0px); transition: all 0s ease 0s; width: 2376px;">
+                                            <div class="owl-item" style="width: 178px; margin-right: 20px;">
+                                                <div class="item">
+                                                    <h4>Productividad</h4>
+                                                    <ul>
+                                                        <li>Mejoras en procesos logísticos</li>
+                                                        <li>Optimizar procesos de auditoría</li>
+                                                        <li>Menor tiempo de distribución</li>
+                                                        <li>Reducción en tiempo de cobranza</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item" style="width: 178px; margin-right: 20px;">
+                                                <div class="item">
+                                                    <h4>Competitividad</h4>
+                                                    <ul>
+                                                        <li>Mejor servicio al cliente</li>
+                                                        <li>Comprobantes según estándares de SUNAT</li>
+                                                        <li>Seguridad en la protección de documentos</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item" style="width: 178px; margin-right: 20px;">
+                                                <div class="item">
+                                                    <h4>Costos</h4>
+                                                    <ul>
+                                                        <li>Reducción uso de papel</li>
+                                                        <li>Reduce gastos de impresión</li>
+                                                        <li>Almacenamiento de documentos en servidores</li>
+                                                        <li>Mensajería instantánea</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item" style="width: 178px; margin-right: 20px;">
+                                                <div class="item">
+                                                    <h4>Medio Ambiente</h4>
+                                                    <ul>
+                                                        <li>Reducción de insumos para producir papel</li>
+                                                        <li>Menor emisión de CO2</li>
+                                                        <li>Reducción de residuos de impresión</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div> 
                     </div>
                 </div>
-                <div class="row mt-4 mb-4 ">
+                <div class="row mt-4 mb-4 pr-5 pl-5">
                     <div class="col-md-6 col-sm-12 text-center mt-4 mb-4">
                         <img src="images/multiempresa.png" alt="multiempresa">
                         
@@ -116,7 +189,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="row mt-4 mb-4">
+                <div class="row mt-4 mb-4 bg-white pr-5 pl-5">
                     <div class="col-md-6 col-sm-12 mt-4 mb-4">
                         <h5 class="title-easyIntuitiv">Fácil e intuitivo</h5>
                         <p class="align-middle mt-4">
@@ -131,7 +204,7 @@
                         <img src="images/intuitivo.png" alt="intuitivo">
                     </div>
                 </div>
-                <div class="row mt-4 mb-4">
+                <div class="row mt-4 mb-4 pr-5 pl-5">
                     <div class="col-md-6 col-sm-12 text-center mt-4 mb-4">
                         <img src="images/cumplimiento.png" alt="cumplimiento normativo">
                     </div>
@@ -148,6 +221,32 @@
                 </div>
             </div>
         </div>
+        <div id="contactenos" class="section bg-white section-contactanos">
+            <div class="row">
+                <div class="col-md-6 offset-md-6">
+                    <form class="p-5 mr-5 ml-5">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="bmd-label-floating">Nombre</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1">
+                            <span class="bmd-help">We'll never share your email with anyone else.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="bmd-label-floating">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1">
+                            <span class="bmd-help">We'll never share your email with anyone else.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="bmd-label-floating">Mensaje</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1">
+                            <span class="bmd-help">We'll never share your email with anyone else.</span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-raised">Enviar</button>
+                    </form>
+                </div>
+            </div>
+                
+        </div>
         
         <footer class="py-5 bg-dark">
             <div class="container">
@@ -161,7 +260,10 @@
 
 
     <script src="jquery3.3.1.js"></script>
-    <script type="text/javascript" src="assets/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="assets/bootstrap.min.js"></script> -->
+    <!-- <script type="text/javascript" src="assets/bootstrapMaterialDesign.min.js"></script> -->
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
     <script src="assets/aos.min.js"></script>
     <script src="assets/owl.carousel.min.js"></script>
     <script src="sb-siscom.js"></script>
