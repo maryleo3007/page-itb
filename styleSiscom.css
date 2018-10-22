@@ -1,3 +1,7 @@
+ body{
+   
+   overflow-x: hidden;
+ }
  /******************navbar style*************************/
  .navbar{
     border: none;
@@ -13,6 +17,10 @@
   }
   .nabvar-container ul a{
     color: rgba(0, 0, 0, 0.9);
+  }
+  .container-fluid{
+    margin-right: 15px; 
+    margin-left: 15px;
   }
 
   .item{
@@ -81,7 +89,8 @@
   /**********************itbsiscom*****************************/
   /************************************************************/
   .content-siscom {
-    padding-top: 70px;
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
   .content-siscom img{
     height: 345px;
@@ -145,8 +154,8 @@
   }
 
 .siscom-lap{
-  height: 500px !important;
-  width: 100%;
+  height: 400px !important;
+  max-width: 100%;
 }
 .content-fact-detail .row .col-12:nth-child(1),
 .content-fact-detail .row .col-12:nth-child(2),
@@ -366,3 +375,83 @@ border-top-color: #EB6379;
 .business .pt-footer:after {	
 border-top-color: #FFFFFF;	
 }
+/* caracteristicas siscom */
+.caracteristicas *{
+  color: #2378a1;
+}
+
+.caracteristicas .col-md-4{
+  height: 500px;
+padding: 80px 48px;
+}
+.caracteristicas .col-md-4:nth-child(1){
+  background: #def6ec;
+}
+.caracteristicas .col-md-4:nth-child(2){
+  background: #aae3f5;
+}
+.caracteristicas .col-md-4:nth-child(3){
+  background: #77d1ff;
+}
+.caracteristicas p{
+  line-height: 24px;
+}
+.caracteristicas p.small{
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.caracteristicas h2 {
+  font-weight: 700;
+  margin: 0;
+}
+.caracteristicas .icon img {
+  width: 80px;
+  height: auto;
+}
+.section-modulos{
+  padding: 70px 0;
+}
+.section-modulos .box{
+  padding: 40px;
+  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  transition: 0.4s;
+  min-height: 404px;
+  color: #666666;
+}
+.section-modulos p{
+  font-size: 14px;
+  margin-left: 100px;
+  margin-bottom: 0;
+  line-height: 24px;
+}
+.section-modulos p{
+  font-size: 14px;
+  margin-left: 100px;
+  margin-bottom: 0;
+  line-height: 24px;
+}
+.section-modulos h5{
+  margin-left: 100px;
+  font-weight: 700;
+  margin-bottom: 15px;
+
+}
+.section-modulos .icon i:before{
+  background: #1dc8cd;
+  background: linear-gradient(45deg, #60caec 0%, #5d8a90 70%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 34px;
+}
+.section-modulos .icon i{
+  font-size: 70px;
+  transition: 0.5s;
+  line-height: 0;
+  margin-top: 40px;
+}
+.section-modulos .icon {
+  position: absolute;
+}
+

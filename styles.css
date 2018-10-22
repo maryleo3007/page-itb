@@ -990,6 +990,7 @@
     padding: 70px 0;
   }
   .section-contactanos form{
+    background: #ffffff;
     box-shadow: 0px 1px 10px #bfbfbf;
   }
   .custom-file-control, .form-control, .is-focused .custom-file-control, .is-focused .form-control {
