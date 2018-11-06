@@ -56,9 +56,11 @@ $(window).scroll(function() {
     
     if($height > 100) {
         $('#siscomNav').addClass('none');
+        $('#factElectNav').addClass('none');
         
     } else {
         $('#siscomNav').removeClass('none');
+        $('#factElectNav').removeClass('none');
         $('.service-cls').addClass('active');
     }
 });
@@ -94,7 +96,7 @@ $('#btn-como-funciona').on('click', function (e) {
                 nav:false
             },
             600:{
-                items:2,
+                items:1,
                 nav:false
             },
             1000:{
@@ -113,21 +115,41 @@ $('#btn-como-funciona').on('click', function (e) {
 $(document).ready(function () {
     
     $('#btn-funcionalidades').addClass('active');
-    // $('#fullpage').fullpage({
-    //     sectionColor: ['#cccccc','#fffffff','#cccccc','#fffffff','#cccccc','#fffffff'],
-    //     easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)',
-    //     // loopTop: true,
-    //     // loopBottom: true,
-    //     // navigation: true,
-    //     // navigationPosition: true,
-    //     // navigationTooltips: ['Section 1', 'Section 2','Section 3','Section 4','Section 5','Section 6'],
-    //     // afterLoad: function (anchor, index, direction) {
-            
-    //     // },
-    //     // afterLoad: function (index, netIndex, direction) {
-            
-    //     // }
 
-    // });  
+    var siscomForm = $("form#siscomForm");
+    var factElectForm = $("form#factElectForm");
+
+    siscomForm.submit(function(event){
+        event.preventDefault();
+        var service_id = "default_service";
+        var template_id = "template_haVJVAnj";
+
+        siscomForm.find("button").text("Enviando...");
+        emailjs.sendForm(service_id,template_id,siscomForm[0])
+        .then(function(){ 
+            siscomForm.find("button").text("Enviado");
+        }, function(err) {
+            // alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+            siscomForm.find("button").text("Error");
+        });
+        return false;
+    });
+
+    factElectForm.submit(function(event){
+      event.preventDefault();
+    
+      var service_id = "default_service";
+      var template_id = "template_haVJVAnj_clone_clone";
+    
+      factElectForm.find("button").text("Enviando...");
+      emailjs.sendForm(service_id,template_id,factElectForm[0])
+          .then(function(){ 
+            factElectForm.find("button").text("Enviado");
+        }, function(err) {
+        //    alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+           factElectForm.find("button").text("Error");
+        });
+      return false;
+    });
 
 });

@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Itbsolution</title>
     <!-- <link type="text/css" rel="stylesheet" href="assets/bootstrap.min.css"  media="screen,projection"/> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/aos.min.css">
     <link rel="stylesheet" href="styles.css">
-
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("user_tigIQoTeTst1UUV6ZyTeL");
+    })();
+    </script>
 </head>
 <body>
     <div class="wrap-content">
@@ -181,7 +186,7 @@
                     <p class="mt-3">Contáctenos</p>
                 </div>
                 <div class="col-12 col-md-6 ">
-                    <p class="text-center"><strong>Reserva una cita y te realizamos la demo gratis</strong> </p>
+                    <p class="text-center"><strong>Conócenos</strong> </p>
                     <div class="row mt-5 mb-5">
                         <div class="col-5 col-md-5 text-right"><i class="fa fa-home"></i></div><div class="col-7 col-md-7">Pasaje Los Molinos 248</div>
                         <div class="col-5 col-md-5 text-right"><i class="fa fa-phone"></i></div><div class="col-7 col-md-7">+051 997562925 | 01 2397685</div>
@@ -189,18 +194,21 @@
                     </div> 
                 </div>
                 <div class="col-md-6">
-                    <form class="p-5 mr-5 ml-5">
+                    <form id="itbForm" method="post" class="p-5 mr-5 ml-5">
                         <div class="form-group">
-                            <label for="exampleInputEmail1" class="bmd-label-floating">Nombre</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1">
+                            <label for="nameIptItb" class="bmd-label-floating">Nombre</label>
+                            <input type="text" class="form-control" id="nameIptItb" name="from_name">
+                            <span class="bmd-help">mensaje</span>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1" class="bmd-label-floating">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1">
+                            <label for="mailIptItb" class="bmd-label-floating">Email</label>
+                            <input type="email" class="form-control" id="mailIptItb" name="to_name">
+                            <span class="bmd-help">mensaje</span>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1" class="bmd-label-floating">Mensaje</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1">
+                            <label for="msgIptItb" class="bmd-label-floating">Mensaje</label>
+                            <input type="text" class="form-control" id="msgIptItb" name="message_html">
+                            <span class="bmd-help">mensaje</span>
                         </div>
                         
                         <button type="submit" class="btn btn-primary btn-raised">Enviar</button>

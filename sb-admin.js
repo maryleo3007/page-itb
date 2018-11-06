@@ -85,3 +85,25 @@ $(window).scroll(function() {
   }
   
 });
+
+$(document).ready(function () {
+
+  var itbForm = $("form#itbForm");
+  itbForm.submit(function(event){
+    event.preventDefault();
+  
+    var service_id = "default_service";
+    var template_id = "template_haVJVAnj_clone";
+  
+    itbForm.find("button").text("Enviando...");
+    emailjs.sendForm(service_id,template_id,itbForm[0])
+      .then(function(){
+        itbForm.find("button").text("Enviado");
+      }, function(err) {
+        //  alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+         itbForm.find("button").text("Error");
+      });
+    return false;
+  });
+
+});

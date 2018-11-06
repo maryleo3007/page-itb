@@ -949,6 +949,7 @@
   }
   .section-services{
     padding: 70px 0;
+    background: #ffffff;
   }
   .img-service{
     height: 128px;
@@ -988,6 +989,7 @@
   }
   .section-contactanos{
     padding: 70px 0;
+    background-color: #f5f6f7;
   }
   .section-contactanos form{
     background: #ffffff;
@@ -1060,6 +1062,9 @@
     -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
     box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
     outline: 0;
+}
+[class*=" bmd-label"], [class^=bmd-label] {
+  color: rgba(0, 0, 0, 0.46);
 }
 
 

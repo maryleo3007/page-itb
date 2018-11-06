@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>ItbSiscom</title>
     <!-- <link type="text/css" rel="stylesheet" href="assets/bootstrap.min.css"  media="screen,projection"/> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="assets/aos.min.css">
     <link rel="stylesheet" href="assets/owl.carousel.min.css">
     <link rel="stylesheet" href="styleSiscom.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("user_tigIQoTeTst1UUV6ZyTeL");
+    })();
+    </script>
     
 </head>
 <body>
@@ -189,21 +195,21 @@
                     </div> 
                 </div>
                 <div class="col-md-6 col-12">
-                    <form class="p-5 mr-5 ml-5">
+                    <form id="siscomForm" method="post" class="p-5 mr-5 ml-5">
                         <div class="form-group">
-                            <label for="exampleInputEmail1" class="bmd-label-floating">Nombre</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1">
-                            <span class="bmd-help">We'll never share your email with anyone else.</span>
+                            <label for="nameIptSiscom" class="bmd-label-floating">Nombre</label>
+                            <input type="text" class="form-control" id="nameIptSiscom" name="from_name">
+                            <span class="bmd-help">mensaje</span>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1" class="bmd-label-floating">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1">
-                            <span class="bmd-help">We'll never share your email with anyone else.</span>
+                            <label for="mailIptSiscom" class="bmd-label-floating">Email</label>
+                            <input type="email" class="form-control" id="mailIptSiscom" name="to_name">
+                            <span class="bmd-help">mensaje</span>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1" class="bmd-label-floating">Mensaje</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1">
-                            <span class="bmd-help">We'll never share your email with anyone else.</span>
+                            <label for="msgIptSiscom" class="bmd-label-floating">Mensaje</label>
+                            <input type="text" class="form-control" id="msgIptSiscom" name="message_html">
+                            <span class="bmd-help">mensaje</span>
                         </div>
                         
                         <button type="submit" class="btn btn-primary btn-raised">Enviar</button>

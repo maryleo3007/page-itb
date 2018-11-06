@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>ITB Fact</title>
     <!-- <link type="text/css" rel="stylesheet" href="assets/bootstrap.min.css"  media="screen,projection"/> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/aos.min.css">
     <link rel="stylesheet" href="assets/owl.carousel.min.css">
     <link rel="stylesheet" href="styleSiscom.css">
-    
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("user_tigIQoTeTst1UUV6ZyTeL");
+    })();
+    </script>
 </head>
 <body>
     <div class="wrap-content">
-        <nav class="navbar navbar-expand-lg navbar-shrink" id="siscomNav" style="background-color:white">
+        <nav class="navbar navbar-expand-lg navbar-shrink" id="factElectNav">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo-itb" alt=""></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-5">
                     <li class="nav-item">
                     <a class="nav-link js-scroll-trigger home-cls" href="index.html">home</a>
                     </li>
@@ -39,18 +45,26 @@
                 </div>
             </div>
         </nav>
-        <div class="content-siscom"> 
+        <div class="section section-home"> 
             <div class="container-fluid">
                 <div class="row mt-4 mb-4 pr-5 pl-5">
                     <div class="col-12 col-lg-6">
-                            El Sistema de Facturación Electrónica, es un software diseñado para gestionar
-                            los comprobantes electrónicos, desde la generación de éstas, validación por la SUNAT
-                            y notificación al cliente final.
+                        <h1 class="align-middle">Sistema de Facturación Electrónica</h1>
+                        <p class="align-middle">
+                        Es un software diseñado para gestionar
+                        los comprobantes electrónicos, desde la generación de éstas, validación por la SUNAT
+                        y notificación al cliente final.
+                        </p>
+                            
                     </div>
                     <div class="col-12 col-lg-6 d-none d-md-none d-lg-block">
                         <img class="siscom-lap img-responsive" src="images/factura.png" alt="Itbsolution">
                     </div>
                 </div>
+            </div>
+        </div>
+        <div id="beneficios" class="section section-beneficios">
+            <div class="container-fluid">
                 <div class="row mt-4 mb-4 pr-5 pl-5 bg-white">
                     <div class="col-12 mb-4">
                         <h5 class="title-factElec">Beneficios</h5>
@@ -133,12 +147,21 @@
                         </div> 
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div id="precios" class="section section-precios">
+            <div class="container-fluid">
+                <div class="row ml-5 mb-3">
+                    <div class="col12 m-2">
+                        <h5 class="title-precios">Precios</h5>
+                    </div>
+                </div>
                 <div class="row m-5">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                         <!-- PERSONAL -->
-                        <div class="block personal fl">
-                            <h2 class="title">Básico</h2>
-                            <!-- CONTENT -->
+                        <div class="block personal fl ml-4">
+                            <h3 class="title">Básico</h3>
                             <div class="content">
                                 <p class="price">
                                     <sup>S/.</sup>
@@ -147,28 +170,21 @@
                                 </p>
                                 <p class="hint">Gratis</p>
                             </div>
-                            <!-- /CONTENT -->
-                            <!-- FEATURES -->
                             <ul class="features">
                                 <li><span class="fontawesome-cog"></span>Comprobantes electrónicos (XML y PDF)</li>
                                 <li><span class="fontawesome-star"></span>0</li>
                                 <li><span class="fontawesome-dashboard"></span>0r</li>
                                 <li><span class="fontawesome-cloud"></span>0</li>
                             </ul>
-                            <!-- /FEATURES -->
-                            <!-- PT-FOOTER -->
                             <div class="pt-footer">
                                 <p>Contáctanos</p>
                             </div>
-                            <!-- /PT-FOOTER -->
                         </div>
-                        <!-- /PERSONAL -->
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                         <!-- PROFESSIONAL -->
                         <div class="block professional fl">
                             <h2 class="title">Estándar</h2>
-                            <!-- CONTENT -->
                             <div class="content">
                                 <p class="price">
                                     <sup>S/.</sup>
@@ -177,28 +193,21 @@
                                 </p>
                                 <p class="hint">hola</p>
                             </div>
-                            <!-- /CONTENT -->
-                            <!-- FEATURES -->
                             <ul class="features">
                                 <li><span class="fontawesome-cog"></span>hola</li>
                                 <li><span class="fontawesome-star"></span>hola</li>
                                 <li><span class="fontawesome-dashboard"></span>hola</li>
                                 <li><span class="fontawesome-cloud"></span>hola</li>
                             </ul>
-                            <!-- /FEATURES -->
-                            <!-- PT-FOOTER -->
                             <div class="pt-footer">
                                 <p>Contáctanos</p>
                             </div>
-                            <!-- /PT-FOOTER -->
-                        </div>
-                        <!-- /PROFESSIONAL -->                        
+                        </div>                       
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                         <!-- BUSINESS -->
                         <div class="block business fl">
                             <h2 class="title">Premium</h2>
-                            <!-- CONTENT -->
                             <div class="content">
                                 <p class="price">
                                     <sup>S/.</sup>
@@ -207,29 +216,27 @@
                                 </p>
                                 <p class="hint">hola</p>
                             </div>
-                            <!-- /CONTENT -->
-
-                            <!-- FEATURES -->
                             <ul class="features">
                                 <li><span class="fontawesome-cog"></span>hola</li>
                                 <li><span class="fontawesome-star"></span>hola</li>
                                 <li><span class="fontawesome-dashboard"></span>hola</li>
                                 <li><span class="fontawesome-cloud"></span>hola</li>
                             </ul>
-                            <!-- /FEATURES -->
-
-                            <!-- PT-FOOTER -->
                             <div class="pt-footer">
                                 <p>Contáctanos</p>
                             </div>
-                            <!-- /PT-FOOTER -->
                         </div>
-                        <!-- /BUSINESS -->
                     </div>
                 </div>
             </div>
         </div>
+
         <div id="contactenos" class="section bg-white section-contactanos">
+            <div class="row">
+                <div class="col-12 ml-5 mb-5">
+                    <h5 class="title-contacto">Contáctenos</h5>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-12 col-md-6 ">
                     <p class="text-center"><strong>Reserva una cita y te realizamos la demo gratis</strong> </p>
@@ -240,18 +247,21 @@
                     </div> 
                 </div>
                 <div class="col-12 col-md-6">
-                    <form class="p-5 mr-5 ml-5">
+                    <form id="factElectForm" method="post" class="p-5 mr-5 ml-5">
                         <div class="form-group">
-                            <label for="exampleInputEmail1" class="bmd-label-floating">Nombre</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1">
+                            <label for="nameIptFactElec" class="bmd-label-floating">Nombre</label>
+                            <input type="text" class="form-control" id="nameIptFactElec" name="from_name">
+                            <span class="bmd-help">mensaje</span>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1" class="bmd-label-floating">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1">
+                            <label for="emailIptFactElec" class="bmd-label-floating">Email</label>
+                            <input type="email" class="form-control" id="emailIptFactElec" name="to_name">
+                            <span class="bmd-help">mensaje</span>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1" class="bmd-label-floating">Mensaje</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1">
+                            <label for="msgIptFactElec" class="bmd-label-floating">Mensaje</label>
+                            <input type="text" class="form-control" id="msgIptFactElec" name="message_html">
+                            <span class="bmd-help">mensaje</span>
                         </div>
                         
                         <button type="submit" class="btn btn-primary btn-raised">Enviar</button>
