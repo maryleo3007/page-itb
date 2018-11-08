@@ -15,7 +15,7 @@
     width: 100%;
     top: 0;
   }
-  #factElectNav{
+  #factElectNav, #siscomNav{
     background-color: #c0e0ed;
     -webkit-transition: all .25s ease;
     -o-transition: all ease .25s;
@@ -23,7 +23,10 @@
     -webkit-box-shadow: none;
     box-shadow: none;
   }
-  #factElectNav .nav-link{
+  #siscomNav{
+    background-color: #eaf5f9;
+  }
+  #factElectNav .nav-link, #siscomNav .nav-link{
     color: #000000;
     opacity: .5;
     font-family: OpenSans-Regular,Arial,sans-serif;
@@ -34,7 +37,7 @@
     text-transform: capitalize;
     letter-spacing: 2px;
   }
-  #factElectNav .nav-link:hover, #factElectNav .nav-link:active{
+  #factElectNav .nav-link:hover, #factElectNav .nav-link:active,#siscomNav .nav-link:hover, #siscomNav .nav-link:active{
     color:#fc6702;
   }
   
@@ -73,7 +76,7 @@
   .logo-itb{
     height: 60px;
   }
-  #siscomNav .navbar-nav>li.nav-item>a.nav-link:focus:hover, #siscomNav .navbar-nav>li.nav-item>a.nav-link {
+  /* #siscomNav .navbar-nav>li.nav-item>a.nav-link:focus:hover, #siscomNav .navbar-nav>li.nav-item>a.nav-link {
     font-size: .9rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -81,7 +84,7 @@
   
   #siscomNav .navbar-nav>li.nav-item>a.nav-link:focus:hover, #siscomNav .navbar-nav>li.nav-item>a.nav-link:hover {
     color: #f05f40;
-  }
+  } */
 .service-cls.active{
     color: #f05f40 !important;
   }
@@ -109,7 +112,7 @@
   .content-siscom {
     padding-top: 150px;
     padding-bottom: 150px;
-    background-color: #c0e0ed;
+    background-color: #eaf5f9;
   }
   .section-home{
     padding-top: 150px;
